@@ -1,0 +1,1272 @@
+<div class="grid">
+    <!-- <div class="col-12">
+        <div class="card">
+            <h5>Toolbar</h5>
+            <p-toolbar>
+                <div class="p-toolbar-group-left flex flex-wrap">
+                    <button pButton type="button" label="New" icon="pi pi-plus" class="mr-2"></button>
+                    <button pButton type="button" label="Open" icon="pi pi-folder-open" class="p-button-secondary mr-2"></button>
+
+                    <i class="pi pi-bars p-toolbar-separator"></i>
+
+                    <button pButton type="button" icon="pi pi-check" class="p-button-success mr-2"></button>
+                    <button pButton type="button" icon="pi pi-trash" class="p-button-warning mr-2"></button>
+                    <button pButton type="button" icon="pi pi-print" class="p-button-danger"></button>
+                </div>
+
+                <div class="p-toolbar-group-right">
+                    <p-splitButton label="Options" icon="pi pi-check" [model]="items"></p-splitButton>
+                </div>
+            </p-toolbar>
+        </div>
+    </div> -->
+
+    <div class="col-12">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h4>Consejeros Regionales</h4>
+
+            <p-panel header="¿Qué hace un consejero?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                <ul style="margin-left: -2rem">
+                    <li>Representar los intereses de la comunidad de su circunscripción dentro del Consejo Regional.
+                    </li>
+                    <li>Aprobar el presupuesto regional propuesto por el gobernador regional.
+                    </li>
+                    <li>Evaluar y aprobar proyectos de inversión pública y programas de desarrollo regional.
+                    </li>
+                    <li>Fiscalizar el uso de los recursos asignados al Gobierno Regional.
+                    </li>
+                    <li>Emitir acuerdos y resoluciones sobre temas relevantes para el desarrollo regional.
+                    </li>
+                    <li>Participar en comisiones especializadas dentro del Consejo Regional para analizar proyectos
+                        específicos.
+                    </li>
+                    <li>Promover la participación ciudadana en las decisiones de desarrollo regional.</li>
+                </ul>
+            </p-panel>
+
+            <p-panel header="¿Por qué es importante elegir un consejero regional?" [toggleable]="true"
+                [collapsed]="true" class="line-height-3 m-0" style="text-align: justify;">
+                Elegir bien a un consejero regional en Chile es importante porque ellos gestionan y aprueban proyectos y
+                recursos que impactan el desarrollo de la región. Su labor incluye asignar fondos para infraestructura,
+                salud, educación y transporte, además de supervisar programas públicos que benefician a los habitantes.
+                Un buen consejero regional ayuda a asegurar que los recursos se destinen a las necesidades más urgentes
+                y estratégicas, mejorando así la calidad de vida y el desarrollo sostenible de cada provincia en la
+                región.
+            </p-panel>
+
+            <p-panel header="Sobre la sección" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                Por limitaciones temporales, esta sección <b>solo contiene la información de los candidatos a concejales
+                    regionales para los votantes de la circunscripción V de santiago, que contiene a las comunas: La
+                    Florida, La
+                    Granja, Macul, Peñalolén y San Joaquín.</b> <br><br>
+                Adicionalmente, y por falta de información disponible, se agrega un breve resumen de antecedentes y/o
+                declaraciones de cada candidato. Se recomienda encarecidamente revisar las redes sociales (si están
+                disponibles) para conocer mejor al candidato.
+            </p-panel>
+
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h6>Listas</h6>
+            <p-megaMenu [model]="items"></p-megaMenu>
+
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view1'">
+
+        <div class="card" style="background-color: #d7fcd7;">
+
+            <h5>Izquierda Ecologista Popular</h5>
+            <h6>Independientes</h6>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/natalia.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Natalia Garrido Toro (B-100)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Natalia Belén Garrido Toro tiene 34 años, es estudiante de derecho. Es directora de la Corporación
+                    Poblar (movimiento de pobladoras y pobladores en la lucha). Nació en la toma de terreno Esperanza
+                    Andina de Peñalolén, actualmente reside en la misma comuna.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/nataliagarridotoro/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/pikachu.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Giovanna Grandon Caro (B-101)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Conocida como la <i>Tía Pikachu</i>, es una asistente de párvulos, activista social y política
+                    chilena.
+                    Actualmente es una de las vicepresidentas del Partido Popular. Obtuvo una gran atención mediática y
+                    social durante las manifestaciones acontecidas en Chile desde octubre de 2019, debido a que
+                    utilizaba un disfraz de Pikachu, personaje de la saga Pokémon.
+
+                    El 16 de mayo de 2021 fue electa como constituyente del distrito 12 en las elecciones de
+                    convencionales constituyentes de Chile de 2021.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/bailapikachu.oficial/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/elias.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Elias Briceño Olguín (B-102)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Poca información disponible online. Según su descripción en redes sociales: <i>"un CORE para las
+                        comunas de San Joaquín, Macul, Peñalolén, La Granja y La Florida, infórmate e invítame a
+                        reuniones, estén atentos a los life, saludos"</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/eliasbricenoolguin/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view2'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Todas y Todos por Chile</h5>
+            <li class="flex align-items-center py-2 mb-1 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/comunista.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido Comunista de Chile
+                    <span class="text-600 text-sm"> <br>Comunismo, Marxismo-leninismo, Feminismo socialista</span>
+                    <span class="text-600 text-sm font-bold"><br> Izquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/danae.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Danae Prado Carmona (C-103)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Presidenta de la Comisión de Mujer y Género y actual consejera regional Santiago V. Feminista y
+                    militante del partido comunista (PC). Impulsó proyectos como: Proyecto de convivencia intercultural
+                    migratoria, reconstrucción de plaza Balmaceda, entre otros.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/danaepradoc/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/esteban.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Esteban Chavez Rivera (C-104)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Técnico paramédico (TENS) en el hospital Luis Tisne y presidente de la Asociación de Funcionarios de
+                    la Salud (FENATS) de dicho Hospital. Ex candidato a Constituyente independiente.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/estebanchavez2/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <li class="flex align-items-center py-2 surface-border border-top-3 mt-2">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/accion.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Acción Humanista
+                    <span class="text-600 text-sm"> <br>Nuevo Humanismo, Democracia Radical</span>
+                    <span class="text-600 text-sm font-bold"><br> Izquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/catalina.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Catalina Vidal Méndez (C-105)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Licenciada en Trabajo Social en la Universidad San Sebastián. Ex jefa de gestión territorial en la
+                    municipalidad de La Cisterna. Indica en su perfil: <i>“Estoy dispuesta a trabajar por el bienestar
+                        de
+                        las comunidades, asegurando una distribución más equitativa de los recursos del Gobierno
+                        Regional,
+                        siempre según las necesidades de cada territorio. Mi candidatura se levanta con fuerza desde
+                        valores
+                        humanistas de no violencia, no discriminación y justicia territorial, poniendo en el centro a
+                        las
+                        personas y sus necesidades.”</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/catalinapaz_vidalm/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <h6>Independientes</h6>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/bernardo.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Bernardo Jorquera Leyton (C-106)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin antecedentes públicos.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/bernardojorquera.core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view3'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Chile Vamos</h5>
+            <li class="flex align-items-center py-2 mb-1 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/rn.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3"> Chile Vamos Renovación Nacional - Independientes
+                    <span class="text-600 text-sm"> <br>Conservadurismo, Anticomunismo, Pinochetismo</span>
+                    <span class="text-600 text-sm font-bold"><br> Centroderecha a Derecha</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/aguilo.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Eugenio Aguiló González (I-107)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Magíster en Gestión, Juez canino Internacional FCI, Ex Diplomático,
+                    Médico Veterinario y Dog Lover. Como Juez ha actuado en su país, Chile y en Argentina, Brasil,
+                    Uruguay,
+                    Paraguay, Bolivia, Perú, Colombia, Cuba, Ecuador, Venezuela, El Salvador, Costa Rica, México y Nueva
+                    Zelandia.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/euaguilo/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/marcelo.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Marcelo Zunino Poblete (I-108)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Actual CORE por Santiago V. Político, entrenador de fútbol y
+                    exfutbolista chileno que jugó como defensa. Inició su carrera como futbolista en 1981, en las
+                    divisiones inferiores del Audax Italiano.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/marcelozuninopoblete/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/ruth.jpeg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Ruth Miranda Muñóz (I-109)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin antecendetes públicos. Descrita en su perfil: <i>"Mi compromiso es trabajar por el bienestar de
+                        nuestras comunidades. ¡Es
+                        momento de construir tiempos mejores, y lo haremos juntos!"</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/ruthmirandacore/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <li class="flex align-items-center py-2 mt-3 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/UDI.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3"> Chile Vamos UDI - Independientes
+                    <span class="text-600 text-sm"> <br>Gremialismo, Nacionalconservadurismo, Anticomunismo</span>
+                    <span class="text-600 text-sm font-bold"><br>Derecha</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/allan.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Allan McKenzie Martínez (V-126)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Publicista. <i>"Soy Allan Mc Kenzie, candidato a consejero regional por la Región
+                        Metropolitana. Mi principal misión es marcar la diferencia en la vida de los santiaguinos,
+                        promoviendo el crecimiento y asegurando que los recursos lleguen a las organizaciones que más lo
+                        necesitan. No permitiremos el mal uso de los fondos que pertenecen a todos los chilenos. Vota
+                        por un cambio en estas elecciones."</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/allan.mckenzie_/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/ramon_elzo.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Ramón Elzo Oviedo (V-127)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"Este #gobierno está acabado en materia de #seguridad , ha sido derrotado por la #delincuencia y
+                        el #narcotrafico , se ha visto sobrepasado en todo ámbito...
+
+                        #Chile no merece seguir soportando esta #ineptitud
+
+                        Soy Ramón Elzo, candidato a CORE por #Peñalolen #LaFlorida #Macul #LaGranja y #SanJoaquin
+                        "</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/ramonelzo/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/jorgeleyton.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Jorge Leyton Ortiz (V-128)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"¡Hola! Soy Jorge, un hombre que por más de 30 años ha sido vecino residente de la comuna de La
+                        Florida, una persona como tu, que hoy por primera vez, motivado por el apoyo de mi familia y
+                        amigos se atreve a dar el paso de convertir el trabajo silencioso de muchos años en un esfuerzo
+                        público que me permita lograr más, por ti, por los vecinos y vecinas de las comunas de La
+                        Florida, La Granja, San Joaquín, Macul y Peñalolén, hoy quiero ser TU CORE!
+                        ¡Tenemos mucho por lo que TRABAJAR el momento es AHORA!"
+                    </i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/jorgeleytoncore/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <li class="flex align-items-center py-2">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/evo.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Chile Vamos Evópoli - Independientes
+                    <span class="text-600 text-sm"> <br>Liberalismo, Individualismo, Anticomunismo</span>
+                    <span class="text-600 text-sm font-bold"><br>Centroderecha a Derecha</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/christian.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Christian Hurtado Araya (W-129)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Ingeniero Civil Informático. <i>"Un Consejero Regional es la voz de las comunas en el gobierno
+                        regional, encargado de gestionar los recursos y diseñar políticas que impacten directamente
+                        nuestra calidad de vida. Como CORE, me la jugaré por nuestra seguridad, por fomentar el
+                        deporte, por impulsar nuestra cultura y por cuidar nuestras áreas verdes.
+                        Necesitamos un CORE con visión, capacidad técnica y compromiso con la comunidad, ¡y estoy listo
+                        para asumir ese desafío!"</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/elchristianhurtado/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/nofoto.jpeg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Kaimin Chia Beas (W-130)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Ingeniero Civil Eléctrico con una sólida experiencia en la administración de áreas de tecnología y
+                    operaciones de sistemas, liderando equipos de profesionales en importantes empresas multinacionales
+                    de servicios, minería, telecomunicaciones y de entretención.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/kaiminchia/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/nofoto.jpeg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Jorge Muñoz Latorre (W-131)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin información pública.
+                </p>
+            </p-fieldset>
+
+            <h6>Independientes</h6>
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/katherine.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Katherine Pérez Contreras (W-132)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"Como futura consejera estoy enfocada en fortalecer la infraestructura deportiva, apoyar a
+                        atletas locales y crear oportunidades para el deporte juvenil. Además, soy una defensora del
+                        deporte como herramienta de integración social y desarrollo personal, buscando siempre
+                        involucrar a la comunidad en sus proyectos.
+                        "</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/katherineperez132/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view4'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Tú Región Radical</h5>
+            <li class="flex align-items-center py-2 mb-1">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/radical.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido Radical de Chile
+                    <span class="text-600 text-sm"> <br>Radicalismo, Socioliberalismo, Laicismo</span>
+                    <span class="text-600 text-sm font-bold"><br> Centro a Centroizquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/carlos_gomez.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Carlos Gómez Fuentealba (L-110)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin antecedentes públicos.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/carlosgomezfuentealba/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/gino.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Gino Avendaño Undurraga (L-111)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Profesor y deportista. Sin experiencia previa en política.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/gino_avendano_u/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view5'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Regiones Verdes Liberales</h5>
+            <li class="flex align-items-center py-2 mb-1 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/verdesocial.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Federación Regionalista Verde Social
+                    <span class="text-600 text-sm"> <br>Regionalismo, Ecologismo, Progresismo</span>
+                    <span class="text-600 text-sm font-bold"><br>Centroizquierda a Izquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/maria.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">María Olea Rodríguez (M-112)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Actual CORE por Santiago V. Se describe su campaña: <i>"Amigos y amigas soy Candidata a la
+                        Re-eleccion como Consejera Regional de la Region Metropolitana, de la Circunscripcion V que
+                        comprende las comunas de Macul, Peñalolen, San Joaquin, La Granja y La Florida."</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/coremariaesterolea/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/jorge.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Jorge Rojas Meza (M-113)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Jefe de Retail en grupo de empresas Andes. Sin experiencia previa en política.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/jorge.rojas.meza/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <h6>Independientes</h6>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/ivan.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Iván Gajardo Calderón (M-114)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Profesor. Sin experiencia previa en política.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/toritogajardo/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view6'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Lo Mejor para Chile</h5>
+            <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/socialista.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido Socialista de Chile
+                    <span class="text-600 text-sm"> <br>Socialdemocracia, Feminismo Socialista</span>
+                    <span class="text-600 text-sm font-bold"><br>Centroizquierda a Izquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/claudio.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Claudio Burgos Bobadilla (N-115)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin antecedentes públicos. Sin experiencia previa en política.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/claudioburgos_core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/veronica.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Verónica Aliaga Ramírez (N-116)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Ex Concejala de La Florida, dirigenta social de La Florida en temas de vivienda, pavimentación de
+                    calles y educación.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/vero.elisaliaga/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <li class="flex align-items-center py-2 border-top-3 mt-2 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/ppd.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido por la Democracia
+                    <span class="text-600 text-sm"> <br>Tercera vía, Socialismo Democrático</span>
+                    <span class="text-600 text-sm font-bold"><br>Centroizquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/ernesto.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Ernesto Fernández León (N-117)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Diseñador gráfico 10 años de experiencia, con conocimiento en gráfica Digital e impresos, con
+                    experiencia en campañas políticas. CM con experiencia en gestión de Redes Sociales para personas
+                    públicas.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/efernandez_leon/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <h6>Independientes</h6>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/ramon.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Ramon Ortiz Seguel (N-118)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"Hoy candidato a CORE DISTRITO 5!!
+                        Concejal San Joaquin 2008 - 2020
+                        Dedicado al sector público"</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/ramon0rtizcore/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="col-12" *ngIf="selectedView === 'view7'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Por un Chile Mejor</h5>
+
+            <li class="flex align-items-center py-2 mt-3 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/democratacristiano.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido Demócrata Cristiano
+                    <span class="text-600 text-sm"> <br>Democracia Cristiana, Socialcristianismo, Humanismo Cristiano
+                    </span>
+                    <span class="text-600 text-sm font-bold"><br>Centro a Centroizquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/johanna.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Johanna Arias Pacheco (Q-119)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin información pública.
+                </p>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/cecilia.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Cecilia Celis Ahumada (Q-120)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"Por regiones más justas y equitativas te invitamos a votar por nuestras candidatas y candidatos
+                        al Consejo Regional.
+                        Por más seguridad, para trabajar por el fin de las listas de espera y para que el desarrollo del
+                        país llegue a todos y todas. Este próximo 26 y 27 de octubre vota Democracia Cristiana
+                        "</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/ceciliaceliscore77/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/rene.jpeg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Rene Ramírez López (Q-121)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Administrador Público. Licenciado en Cs. Políticas y Administrativas
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/reneivanramirez/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view8'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Frente Amplio</h5>
+            <li class="flex align-items-center py-2 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/fa.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Frente Amplio
+                    <span class="text-600 text-sm"> <br>Progresismo, Latinoamericanismo, Feminismo</span>
+                    <span class="text-600 text-sm font-bold"><br>Izquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/francisca.jfif" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Francisca Marquez Bustos (S-122)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Licenciada y titulada en Trabajo Social en la PUCV. Cuenta con diplomado en Trabajo Social Clínico y
+                    en Gestión de Servicios de Salud Mental en el Servicio Público de Salud.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/franmarquez.core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/ignacio.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Ignacio Bahamondes Díaz (S-123)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"Como Consejero Regional, trabajaremos en impulsar el desarrollo económico local, apoyando y
+                        fortaleciendo a medianos emprendimientos de vecinas y vecinos."</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/ignaciobahamondes.core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/javier.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Javier Ahumada Guerrero (S-124)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Psicólogo. <i>"Todos hemos dado pasos importantes en nuestra vida, que vienen de un pasado y van a
+                        un futuro.
+                        Quiero invitarte a que te sumes a este paso, al que otros han recorrido con su esfuerzo por un
+                        mejor país, para que tu también seas parte de esta camino hacia la construcción de ciudades
+                        seguras, justas y que nos cuiden.
+                        "</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/javierahumadag/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/angelo.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Angelo Mendoza Tapia (S-125)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Trabajador Social. <i>"En mi futura labor como Consejero Regional forjaré vínculos con todas las
+                        comunidades, organizaciones sociales y con el municipio de la comuna de Peñalolén."</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/angelomendoza.core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view9'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Ecologistas, Animalistas e Independientes</h5>
+            <li class="flex align-items-center py-2 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/avp.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido Alianza Verde Popular
+                    <span class="text-600 text-sm"> <br>Animalismo, Ecologismo, Democracia Participativa
+                    </span>
+                    <span class="text-600 text-sm font-bold"><br>Izquierda</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/fresia.jpg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Fresia Mónica Quilodrán (X-133)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    <i>"En el término de campaña, nuestro mayor anhelo es que nuestras propuestas Por
+                        una Vida Digna para todas y todos quede en el corazón de las y los Chilenos.
+                        Continuaremos por el camino de la lucha por una plena democratización de la sociedad Chilena.
+                        "</i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/fresiamonicaquilodran/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/nofoto.jpeg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Ivanna Ordenes Jofre (X-134)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin información pública.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/ivanna_ordenes_2024/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/yuri.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Yuri Rivera Rivera (X-135)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Trabajador Social. Animalista.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/yuri_rivera_r/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/nofoto.jpeg" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Jacqueline Ramirez Garrido (X-136)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin antecedentes públicos.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/jacquelineramirezgarrido/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="col-12" *ngIf="selectedView === 'view10'">
+        <div class="card" style="background-color: #d7fcd7;">
+            <h5>Republicanos e Independientes</h5>
+            <li class="flex align-items-center py-2 surface-border">
+                <div
+                    class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                    <p-avatar image="assets/demo/images/partidos/republicano.png" shape="circle" size="large" />
+                </div>
+                <span class="text-900 line-height-3">Partido Republicano de Chile
+                    <span class="text-600 text-sm"> <br>Pinochetismo, Ultraconservadurismo, Autoritarismo </span>
+                    <span class="text-600 text-sm font-bold"><br>Extrema Derecha</span>
+                </span>
+            </li>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/rodrigo.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Rodrigo Donoso Baeza (Y-137)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Docente e Ingeniero.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/redonoso.core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/carlos_varea.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Carlos Varea Benavides (Y-138)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Casado, 4 hijos , 2 nietos. Ingeniero civil UC. Amante de los deportes, la pintura y el tango.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/cevarea/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/david.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">David Gómez Contreras (Y-139)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Sin antecedentes públicos.
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/davidgomez_core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+            <h6>Independientes</h6>
+            <p-fieldset [toggleable]="true" [collapsed]=true>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center gap-2 px-2">
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/sergio.png" shape="circle"
+                            size="large" />
+                        <span class="font-bold">Sergio Morales Méndez (Y-140)</span>
+                    </div>
+                </ng-template>
+                <p style="text-align: justify;" class="m-0">
+                    Director ejecutivo de Deportes La Florida. <i>"Poder gestionar espacios deportivos, recuperarlos
+                        para la comunidad y ver cómo los niños los disfrutan es lo que me motiva cada día.
+
+                        Es un honor ser parte de estos cambios que impulsan un futuro más saludable y lleno de
+                        oportunidades para todos."
+                    </i>
+                </p>
+                <div class="flex justify-content-center mt-3">
+                    <a href="https://www.instagram.com/davidgomez_core/" target="_blank">
+                        <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </p-fieldset>
+
+        </div>
+    </div>
+
+    <!--<div class="col-12 md:col-6">
+
+        <div class="card">
+            <h5>TabView</h5>
+            <p-tabView orientation="left">
+                <p-tabPanel header="Header I" class="line-height-3 m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </p-tabPanel>
+                <p-tabPanel header="Header II" class="line-height-3 m-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque
+                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt.
+                    Consectetur, adipisci velit, sed quia non numquam eius modi.
+                </p-tabPanel>
+                <p-tabPanel header="Header III" class="line-height-3 m-0">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores
+                    et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit
+                    quo minus.
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <div class="card">
+            <h5>Panel</h5>
+            <p-panel header="Header" [toggleable]="true" class="line-height-3 m-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p-panel>
+        </div>
+
+        <div class="card">
+            <h5>Fieldset</h5>
+            <p-fieldset legend="Legend" [toggleable]="true" class="line-height-3 m-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p-fieldset>
+        </div>
+
+        <div class="card">
+            <div class="flex align-items-center justify-content-between mb-0">
+                <h5>Card</h5>
+                <p-menu #menu [popup]="true" [model]="cardMenu"></p-menu>
+                <button pButton type="button" icon="pi pi-plus" class="p-button-text"
+                    (click)="menu.toggle($event)"></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card">
+            <h5>Divider</h5>
+            <div class="grid">
+                <div class="col-5 flex align-items-center justify-content-center">
+                    <div class="p-fluid">
+                        <div class="field">
+                            <label for="username">Username</label>
+                            <input pInputText id="username" type="text" />
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input pInputText id="password" type="password" />
+                        </div>
+                        <p-button label="Login" class="mt-2"></p-button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p-divider layout="vertical">
+                        <b>OR</b>
+                    </p-divider>
+                </div>
+                <div class="col-5 align-items-center justify-content-center">
+                    <p class="line-height-3 m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+
+                    <p-divider layout="horizontal" align="center">
+                        <span class="p-tag">Badge</span>
+                    </p-divider>
+
+                    <p class="line-height-3 m-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+
+                    <p-divider align="right">
+                        <p-button label="Button" icon="pi pi-search" styleClass="p-button-outlined"></p-button>
+                    </p-divider>
+
+                    <p class="line-height-3 m-0">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et
+                        voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur
+                        a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                        doloribus asperiores repellat.
+                        Donec vel volutpat ipsum. Integer nunc magna, posuere ut tincidunt eget, egestas vitae sapien.
+                        Morbi dapibus luctus odio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card">
+            <h5>Splitter</h5>
+            <p-splitter [style]="{'height': '300px'}" [panelSizes]="[30,70]">
+                <ng-template pTemplate>
+                    <div class="col flex align-items-center justify-content-center">
+                        Panel 1
+                    </div>
+                </ng-template>
+                <ng-template pTemplate>
+                    <p-splitter layout="vertical" [panelSizes]="[50,50]" [minSizes]="[10,10]">
+                        <ng-template pTemplate>
+                            <div class="col flex align-items-center justify-content-center">
+                                Panel 2
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate>
+                            <div class="col flex align-items-center justify-content-center">
+                                Panel 3
+                            </div>
+                        </ng-template>
+                    </p-splitter>
+                </ng-template>
+            </p-splitter>
+        </div>
+    </div>-->
+</div>

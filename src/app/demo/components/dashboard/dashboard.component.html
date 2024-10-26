@@ -1,0 +1,685 @@
+<div class="grid">
+    <div class="col-12">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <h3>Info Resumen</h3>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-red-100 border-round"
+                    [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-exclamation-circle text-red-500 text-xl"></i>
+                </div>
+
+            </div>
+
+            <p-panel header="¿Qué se vota?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                Este 26 y 27 de octubre se votará para elegir:
+                <ul style="margin-left: -2rem">
+                    <li>Gobernador Regional</li>
+                    <li>Consejero Regional</li>
+                    <li>Alcalde Municipal</li>
+                    <li>Concejal Municipal</li>
+                </ul>
+            </p-panel>
+            <p-panel header="¿Qué pasa si no voto?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                El voto es obligatorio. Los que no votan reciben una <b>multa de $33.280</b>
+            </p-panel>
+            <p-panel header="¿Cómo sé quién gana?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                <ul style="margin-left: -2rem">
+                    <li><b>Gobernador Regional:</b> 40% de los votos. Si nadie llega, se va a segunda vuelta con los 2
+                        más votados</li>
+                    <li><b>Consejero Regional:</b> Se eligen proporcionalmente dependiendo de la región. Esto garantiza
+                        una representación de cada lista/partido. De cada lista se elige al representante con más votos.
+                    </li>
+                    <li><b>Alcalde Municipal:</b> Se elige de manera directa. El alcalde con más votos gana, sin
+                        importar el porcentaje.
+                    </li>
+                    <li><b>Concejal Regional:</b> La cantidad de concejales electos depende del tamaño de la comuna. Se
+                        eligen
+                        de manera proporcional igual que los consejeros regionales.
+                    </li>
+                </ul>
+            </p-panel>
+
+            <p-panel header="¿Cómo funciona la página?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                Esta página está diseñada para entregar información de manera expedita sobre los candidatos. <br><br> La
+                información entregada es un resumen, por lo que se aconseja investigar un poco más por redes sociales.
+                <br><br> La
+                página cuenta con un menú de navegación en el icono superior izquierdo, donde se puede explorar la
+                información de los diferentes candidatos
+            </p-panel>
+
+            <p-panel header="Sobre la página y concejales" [toggleable]="true" [collapsed]="true"
+                class="line-height-3 m-0" style="text-align: justify;">
+                Por temas de tiempo, la página sólo contiene la información referente a <b>Santiago provincia V y
+                    comunas de Macul y La Granja.</b><br><br>
+                Adicionalmente, no se agregó la información de concejales comunales ya que estos son un gran número de
+                candidatos los cuales no realizan campañas grandes. Se recomienda votar según el partido político.
+            </p-panel>
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-6">
+        <div class="card">
+            <div class="flex justify-content-between align-items-center mb-0">
+                <h5>Encuestas Recientes Sobre Gobernadores</h5>
+            </div>
+            <div class="mb-4">
+                <p style="text-align: justify;"> Resultados de las encuentas hechas por <b>Panel Ciudadano</b> en agosto
+                    de 2024. <i>"Si la elección
+                        de gobernadores fuera el próximo domingo, ¿por cuál
+                        de los siguientes candidatos(as) votaría usted?"</i> </p>
+            </div>
+            <ul class="list-none p-0 m-0">
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center w-full"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/concejal/orrego2.jfif" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Claudio Orrego</span>
+                            <div class="mt-1 text-600">Independiente</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-orange-500 h-full" [ngStyle]="{width: '41%'}"></div>
+                        </div>
+                        <span class="text-orange-500 ml-3 font-medium">%41</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="/assets/demo/images/candidatos/concejal/nofoto.jpeg" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Nulo</span>
+                            <div class="mt-1 text-600">No sabe/No votaría</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-cyan-500 h-full" [ngStyle]="{width: '26%'}"></div>
+                        </div>
+                        <span class="text-cyan-500 ml-3 font-medium">%26</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/gobernador/orrego_francisco.jpg" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Francisco Orrego</span>
+                            <div class="mt-1 text-600">Chile Vamos</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-pink-500 h-full" [ngStyle]="{width: '12%'}"></div>
+                        </div>
+                        <span class="text-pink-500 ml-3 font-medium">%12</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/gobernador/macarena.jpg" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Macarena Santelices</span>
+                            <div class="mt-1 text-600">Republicanos</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-green-500 h-full" [ngStyle]="{width: '10%'}"></div>
+                        </div>
+                        <span class="text-green-500 ml-3 font-medium">%10</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/gobernador/rodrigo.jpg" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Rodrigo Logan</span>
+                            <div class="mt-1 text-600">Partido Social Cristiano</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-red-500 h-full" [ngStyle]="{width: '3%'}"></div>
+                        </div>
+                        <span class="text-red-500 ml-3 font-medium">%3</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/gobernador/carlos.png" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Carlos Pichuante</span>
+                            <div class="mt-1 text-600">Ecologistas, Animalistas</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-teal-500 h-full" [ngStyle]="{width: '3%'}"></div>
+                        </div>
+                        <span class="text-teal-500 ml-3 font-medium">%3</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/gobernador/cata.jpg" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Catalina Valenzuela</span>
+                            <div class="mt-1 text-600">Izquierda Ecologista Popular</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-purple-500 h-full" [ngStyle]="{width: '2%'}"></div>
+                        </div>
+                        <span class="text-purple-500 ml-3 font-medium">%2</span>
+                    </div>
+                </li>
+
+                <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                    <div class="flex align-items-center"> <!-- Cambiado aquí -->
+                        <p-avatar image="assets/demo/images/candidatos/gobernador/nathalie.jpg" shape="circle"
+                            size="large" />
+                        <div class="ml-2"> <!-- Agregada clase ml-2 para margen -->
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Nathalie Joignant</span>
+                            <div class="mt-1 text-600">Regiones Verdes Liberales</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                        <div class="surface-300 border-round overflow-hidden w-full lg:w-6rem"
+                            [ngStyle]="{height: '8px'}">
+                            <div class="bg-indigo-500 h-full" [ngStyle]="{width: '1%'}"></div>
+                        </div>
+                        <span class="text-indigo-500 ml-3 font-medium">%1</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-6">
+        <div class="card">
+            <div class="flex justify-content-between align-items-center mb-0">
+                <h5>Partidos políticos y Listas</h5>
+            </div>
+
+            <span class="block text-yellow-900 font-medium mb-3">Izquierda Ecologista Popular (B) </span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/igualdad.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Igualdad
+                        <span class="text-600 text-sm"> <br>Populismo de Izquierda, Antifascismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/humanista.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Humanista de Chile
+                        <span class="text-600 text-sm"> <br>Ecología Social, Feminismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/popular.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Popular
+                        <span class="text-600 text-sm"> <br>Nacionalismo popular, Antineoliberalismo</span>
+                    </span>
+                </li>
+            </ul>
+
+            <span class="block text-orange-900 font-medium mb-3">Centro Democrático (R) </span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/democratas.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Demócratas
+                        <span class="text-600 text-sm"> <br>Humanismo Cristiano, Regionalismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/amarillos.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Amarillos por Chile
+                        <span class="text-600 text-sm"> <br>Conservadurismo, Neoliberalismo</span>
+                    </span>
+                </li>
+            </ul>
+
+            <span class="block text-cyan-400 font-medium mb-3">Partido Social Cristiano e Independientes (F)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/cristiano.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Social Cristiano
+                        <span class="text-600 text-sm"> <br>Evangelicalismo, Ultraconservadurismo</span>
+                    </span>
+                </li>
+            </ul>
+            <span class="block text-pink-300 font-medium mb-3">Tu Región Radical (L)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/radical.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Radical de Chile
+                        <span class="text-600 text-sm"> <br>Radicalismo, Socioliberalismo</span>
+                    </span>
+                </li>
+            </ul>
+
+            <span class="block text-green-400 font-medium mb-3">Regiones Verdes Liberales (M)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/verdesocial.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Federación Regionalista Verde Social
+                        <span class="text-600 text-sm"> <br>Regionalismo, Ecologismo, Progresismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/liberal.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Liberal de Chile
+                        <span class="text-600 text-sm"> <br>Progresismo, Liberalismo Progresista</span>
+                    </span>
+                </li>
+            </ul>
+            <span class="block text-red-700 font-medium mb-3">Todos y Todas por Chile (C)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/comunista.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Comunista de Chile
+                        <span class="text-600 text-sm"> <br>Comunismo, Marxismo-leninismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/accion.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Acción Humanista
+                        <span class="text-600 text-sm"> <br>Nuevo Humanismo, Democracia Radical</span>
+                    </span>
+                </li>
+            </ul>
+            <span class="block text-red-900 font-medium mb-3"> Lo Mejor para Chile (N) </span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/socialista.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Socialista de Chile
+                        <span class="text-600 text-sm"> <br>Socialdemocracia, Feminismo Socialista</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/ppd.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido por la Democracia
+                        <span class="text-600 text-sm"> <br>Tercera vía, Socialismo Democrático</span>
+                    </span>
+                </li>
+            </ul>
+
+            <span class="block text-red-700 font-medium mb-3">Frente Amplio (S)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/fa.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Frente Amplio
+                        <span class="text-600 text-sm"> <br>Progresismo, Latinoamericanismo</span>
+                    </span>
+                </li>
+            </ul>
+
+            <span class="block text-gray-500 font-medium mb-3"> Partido de la Gente e Independientes (P)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/gente.jpg" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido de la Gente
+                        <span class="text-600 text-sm"> <br>Populismo, Conservadurismo Liberal, Antiinmigración</span>
+                    </span>
+            </ul>
+            <span class="block text-red-300 font-medium mb-3"> Por un Chile Mejor (Q)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/democratacristiano.png" shape="circle"
+                            size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Demócrata Cristiano
+                        <span class="text-600 text-sm"> <br>Democracia Cristiana, Socialcristianismo</span>
+                    </span>
+            </ul>
+            <span class="block text-teal-700 font-medium mb-3"> Ecologistas, Animalistas e Independientes (X)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/avp.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Alianza Verde Popular
+                        <span class="text-600 text-sm"> <br>Animalismo, Ecologismo</span>
+                    </span>
+            </ul>
+            <span class="block text-indigo-800 font-medium mb-3"> Republicanos e Independientes (Y)</span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/republicano.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Partido Republicano de Chile
+                        <span class="text-600 text-sm"> <br>Pinochetismo, Ultraconservadurismo, Autoritarismo </span>
+                    </span>
+            </ul>
+            <span class="block text-orange-700 font-medium mb-3">Chile Vamos (Z) </span>
+            <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/rn.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3"> Chile Vamos Renovación Nacional - Independientes
+                        <span class="text-600 text-sm"> <br>Conservadurismo, Anticomunismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/UDI.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3"> Chile Vamos UDI - Independientes
+                        <span class="text-600 text-sm"> <br>Gremialismo, Nacionalconservadurismo</span>
+                    </span>
+                </li>
+                <li class="flex align-items-center py-2">
+                    <div
+                        class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                        <p-avatar image="assets/demo/images/partidos/evo.png" shape="circle" size="large" />
+                    </div>
+                    <span class="text-900 line-height-3">Chile Vamos Evópoli - Independientes
+                        <span class="text-600 text-sm"> <br>Liberalismo, Individualismo</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">Revenue</span>
+                        <div class="text-900 font-medium text-xl">$2.100</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-orange-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-map-marker text-orange-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">%52+ </span>
+                <span class="text-500">since last week</span>
+            </div>
+        </div>
+        <div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">Customers</span>
+                        <div class="text-900 font-medium text-xl">28441</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-inbox text-cyan-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">520  </span>
+                <span class="text-500">newly registered</span>
+            </div>
+        </div>
+        <div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">Comments</span>
+                        <div class="text-900 font-medium text-xl">152 Unread</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-purple-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-comment text-purple-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">85 </span>
+                <span class="text-500">responded</span>
+            </div>
+        </div>
+
+        <div class="col-12 xl:col-6">
+            <div class="card">
+                <h5>Recent Sales</h5>
+                <p-table [value]="products" [paginator]="true" [rows]="5" responsiveLayout="scroll">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>Image</th>
+                            <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                            <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
+                            <th>View</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-product>
+                        <tr>
+                            <td style="width: 15%; min-width: 5rem;">
+                                <img src="assets/demo/images/product/{{product.image}}" class="shadow-4" alt="{{product.name}}" width="50">
+                            </td>
+                            <td style="width: 35%; min-width: 7rem;">{{product.name}}</td>
+                            <td style="width: 35%; min-width: 8rem;">{{product.price | currency:'USD'}}</td>
+                            <td style="width: 15%;">
+                                <button pButton pRipple type="button" icon="pi pi-search" class="p-button p-component p-button-text p-button-icon-only"></button>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+            <div class="card">
+                <div class="flex justify-content-between align-items-center mb-5">
+                    <h5>Best Selling Products</h5>
+                    <div>
+                        <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text p-button-plain" (click)="menu.toggle($event)"></button>
+                        <p-menu #menu [popup]="true" [model]="items"></p-menu>
+                    </div>
+                </div>
+                <ul class="list-none p-0 m-0">
+                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                        <div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Space T-Shirt</span>
+                            <div class="mt-1 text-600">Clothing</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 flex align-items-center">
+                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                                <div class="bg-orange-500 h-full" [ngStyle]="{width: '50%'}"></div>
+                            </div>
+                            <span class="text-orange-500 ml-3 font-medium">%50</span>
+                        </div>
+                    </li>
+                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                        <div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Portal Sticker</span>
+                            <div class="mt-1 text-600">Accessories</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                                <div class="bg-cyan-500 h-full" [ngStyle]="{width: '16%'}"></div>
+                            </div>
+                            <span class="text-cyan-500 ml-3 font-medium">%16</span>
+                        </div>
+                    </li>
+                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                        <div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Supernova Sticker</span>
+                            <div class="mt-1 text-600">Accessories</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                                <div class="bg-pink-500 h-full" [ngStyle]="{width: '67%'}"></div>
+                            </div>
+                            <span class="text-pink-500 ml-3 font-medium">%67</span>
+                        </div>
+                    </li>
+                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                        <div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Wonders Notebook</span>
+                            <div class="mt-1 text-600">Office</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                                <div class="bg-green-500 h-full" [ngStyle]="{width: '35%'}"></div>
+                            </div>
+                            <span class="text-green-500 ml-3 font-medium">%35</span>
+                        </div>
+                    </li>
+                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                        <div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Mat Black Case</span>
+                            <div class="mt-1 text-600">Accessories</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                                <div class="bg-purple-500 h-full" [ngStyle]="{width: '75%'}"></div>
+                            </div>
+                            <span class="text-purple-500 ml-3 font-medium">%75</span>
+                        </div>
+                    </li>
+                    <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                        <div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Robots T-Shirt</span>
+                            <div class="mt-1 text-600">Clothing</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
+                            <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" [ngStyle]="{height: '8px'}">
+                                <div class="bg-teal-500 h-full" [ngStyle]="{width: '40%'}"></div>
+                            </div>
+                            <span class="text-teal-500 ml-3 font-medium">%40</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-12 xl:col-6">
+            <div class="card">
+                <h5>Sales Overview</h5>
+                <p-chart type="line" [data]="chartData" [options]="chartOptions"></p-chart>
+            </div>
+
+            <div class="card">
+                <div class="flex align-items-center justify-content-between mb-4">
+                    <h5>Notifications</h5>
+                    <div>
+                        <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text p-button-plain" (click)="menu.toggle($event)"></button>
+                        <p-menu #menu [popup]="true" [model]="items"></p-menu>
+                    </div>
+                </div>
+
+                <span class="block text-600 font-medium mb-3">TODAY</span>
+                <ul class="p-0 mx-0 mt-0 mb-4 list-none">
+                    <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                        <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
+                            <i class="pi pi-dollar text-xl text-blue-500"></i>
+                        </div>
+                        <span class="text-900 line-height-3">Richard Jones
+                    <span class="text-700"> has purchased a blue t-shirt for <span class="text-blue-500">79$</span></span>
+                </span>
+                    </li>
+                    <li class="flex align-items-center py-2">
+                        <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-orange-100 border-circle mr-3 flex-shrink-0">
+                            <i class="pi pi-download text-xl text-orange-500"></i>
+                        </div>
+                        <span class="text-700 line-height-3">Your request for withdrawal of <span class="text-blue-500 font-medium">2500$</span> has been initiated.</span>
+                    </li>
+                </ul>
+
+                <span class="block text-600 font-medium mb-3">YESTERDAY</span>
+                <ul class="p-0 m-0 list-none">
+                    <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                        <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
+                            <i class="pi pi-dollar text-xl text-blue-500"></i>
+                        </div>
+                        <span class="text-900 line-height-3">Keyser Wick
+                    <span class="text-700"> has purchased a black jacket for <span class="text-blue-500">59$</span></span>
+                </span>
+                    </li>
+                    <li class="flex align-items-center py-2 border-bottom-1 surface-border">
+                        <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-pink-100 border-circle mr-3 flex-shrink-0">
+                            <i class="pi pi-question text-xl text-pink-500"></i>
+                        </div>
+                        <span class="text-900 line-height-3">Jane Davis<span class="text-700"> has posted a new questions about your product.</span></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="px-4 py-5 shadow-2 flex flex-column md:flex-row md:align-items-center justify-content-between mb-3" [ngStyle]="{borderRadius: '1rem', background: 'linear-gradient(0deg, rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), linear-gradient(92.54deg, #1C80CF 47.88%, #FFFFFF 100.01%)'}">
+           <div>
+               <div class="text-blue-100 font-medium text-xl mt-2 mb-3">TAKE THE NEXT STEP</div>
+               <div class="text-white font-medium text-5xl">Try PrimeBlocks</div>
+           </div>
+           <div class="mt-4 mr-auto md:mt-0 md:mr-0">
+               <a target="_blank" href="https://www.primefaces.org/primeblocks-ng" class="p-button font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised">
+                   Get Started
+               </a>
+           </div>
+        </div>
+    </div>-->
+</div>

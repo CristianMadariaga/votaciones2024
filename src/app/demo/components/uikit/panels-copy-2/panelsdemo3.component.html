@@ -1,0 +1,477 @@
+<div class="grid">
+    <!-- <div class="col-12">
+        <div class="card">
+            <h5>Toolbar</h5>
+            <p-toolbar>
+                <div class="p-toolbar-group-left flex flex-wrap">
+                    <button pButton type="button" label="New" icon="pi pi-plus" class="mr-2"></button>
+                    <button pButton type="button" label="Open" icon="pi pi-folder-open" class="p-button-secondary mr-2"></button>
+
+                    <i class="pi pi-bars p-toolbar-separator"></i>
+
+                    <button pButton type="button" icon="pi pi-check" class="p-button-success mr-2"></button>
+                    <button pButton type="button" icon="pi pi-trash" class="p-button-warning mr-2"></button>
+                    <button pButton type="button" icon="pi pi-print" class="p-button-danger"></button>
+                </div>
+
+                <div class="p-toolbar-group-right">
+                    <p-splitButton label="Options" icon="pi pi-check" [model]="items"></p-splitButton>
+                </div>
+            </p-toolbar>
+        </div>
+    </div> -->
+
+    <div class="col-12">
+        <div class="card" style="background-color: #cffffb;">
+            <h4>Alcades Macul</h4>
+
+            <p-panel header="¿Qué hace un alcalde?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                <ul style="margin-left: -2rem">
+                    <li>Administrar el funcionamiento del municipio y coordinar los servicios públicos.
+                    </li>
+                    <li>Actuar como representante legal de la comuna y de sus habitantes ante otras instituciones.
+                    </li>
+                    <li>Elaborar y proponer el presupuesto municipal y supervisar su ejecución.
+                    </li>
+                    <li>Promover el desarrollo social, económico y cultural de la comuna.
+                    </li>
+                    <li>Implementar políticas y programas que beneficien a la comunidad.
+                    </li>
+                    <li>Supervisar la ejecución de proyectos y obras públicas en la comuna.
+                    </li>
+                </ul>
+            </p-panel>
+
+            <p-panel header="¿Por qué es importante elegir un alcalde?" [toggleable]="true" [collapsed]="true"
+                class="line-height-3 m-0" style="text-align: justify;">
+                Elegir a un buen alcalde en Chile es esencial, ya que él o ella dirige el desarrollo local, administra
+                el presupuesto y toma decisiones que afectan la calidad de servicios clave como seguridad, salud y
+                educación. Además, el alcalde representa a la comunidad frente a otras instituciones, defendiendo sus
+                intereses y necesidades. Su liderazgo impacta en la infraestructura, el bienestar social y el progreso
+                económico de la comuna, influyendo directamente en la calidad de vida de sus habitantes.
+            </p-panel>
+        </div>
+
+
+        <div class="card" style="background-color: #cffffb;">
+            <h5>Candidatos:</h5>
+            <p-accordion>
+                <p-accordionTab header="Franco Frías Gutierrez" [selected]="false" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border mb-4">
+                        <span class="text-900 line-height-3"> Partido Independiente
+                            <span class="text-600 text-sm"> <br>Actualmente
+                                no forma parte de ningún partido. </span>
+                            <span class="text-600 text-sm font-bold"><br> No indica ideología</span>
+                        </span>
+                    </li>
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/alcalde/franco.jpg  " alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Botones de info -->
+                    <div class="flex justify-content-center gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antfranco.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antfranco [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> Residente de la comuna desde 2005 </li>
+                                    <li> No pertenece a partidos políticos, ni ideologías. </li>
+                                    <li> Sin información de estudios. </li>
+                                    <li> Sin experiencia en política. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propfranco.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propfranco [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> <b>Objetivos:</b> Mejorar seguridad, áreas verdes, limpieza, deporte y cultura.
+                                    </li>
+                                    <li> <b>Iniciativas clave:</b>
+                                        <ul style="text-align: justify; margin-left: -1rem">
+                                            <li>Modernización de servicios municipales.
+                                            </li>
+                                            <li>Alianzas público-privadas para proyectos.
+                                            </li>
+                                            <li>Inversión de 50.000 millones de pesos en áreas prioritarias.</li>
+                                            <li>Creación de programas de seguridad y salud.
+                                            </li>
+                                            <li>Fomento de la participación ciudadana y transparencia.</li>
+                                            <li>Proyectos ambientales y de infraestructura vial.</li>
+                                        </ul>
+                                    </li>
+                                    <li> <b>Compromiso:</b> Transformar Macul en una comuna inclusiva y participativa.
+                                    </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-content-center mt-3">
+                        <a href="https://www.instagram.com/francofriasg/" target="_blank">
+                            <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                        </a>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Camila Donato Pizarro" [selected]="false" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 mb-2 surface-border">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/comunista.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Partido Comunista de Chile
+                            <span class="text-600 text-sm"> <br>Comunismo, Marxismo-leninismo, Antineoliberalismo</span>
+                            <span class="text-600 text-sm font-bold"><br> Izquierda</span>
+                        </span>
+                    </li>
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/alcalde/camila.jpg  " alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Botones de info -->
+                    <div class="flex justify-content-center gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antcamila.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antcamila [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> Concejala de Macul por 12 años. </li>
+                                    <li> Nacida en la comuna. </li>
+                                    <li> Militante feminista. </li>
+                                    <li> Sin información de estudios. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propcamila.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propcamila [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> <b>Prioridades:</b> Seguridad, salud, género y buen vivir,
+                                        derechos humanos, niños y adolescencias, pueblos originarios, discapacidad.
+                                    </li>
+                                    <li> <b>Iniciativas clave:</b>
+                                        <ul style="text-align: justify; margin-left: -1rem">
+                                            <li>Mejoramiento de la salud comunal permitiendo un mejor acceso a esta.
+                                            </li>
+                                            <li>Iniciativas de convivencia y gestión de problemáticas de la mujer.
+                                            </li>
+                                            <li>Fortalecer el departamento de derechos humanos de la comuna.</li>
+                                            <li>Brindar espacios seguros para niños y adolescentes.
+                                            </li>
+                                            <li>Proyectos para el adulto mayor.</li>
+                                            <li>Dialogos con personas de pueblos originarios de la comuna.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-content-center mt-3">
+                        <a href="https://www.instagram.com/camiladonatopizarro/" target="_blank">
+                            <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                        </a>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Eduardo Espinoza Gaete" [selected]="false" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/republicano.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Partido Republicano de Chile
+                            <span class="text-600 text-sm"> <br>Pinochetismo, Ultraconservadurismo, Autoritarismo
+                            </span>
+                            <span class="text-600 text-sm font-bold"><br> Extrema Derecha </span>
+                        </span>
+                    </li>
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/alcalde/eduardo_yayo.jpg" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Botones de info -->
+                    <div class="flex justify-content-center gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antyayo.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antyayo [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> Funcionario municipal, dirigente social, deportista y cristiano. </li>
+                                    <li> Nacido en la comuna. </li>
+                                    <li> Sin información de estudios. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propyayo.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propyayo [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> <b>Prioridades:</b> Participación, transparencia, seguridad.
+                                    </li>
+                                    <li> <b>Iniciativas clave:</b>
+                                        <ul style="text-align: justify; margin-left: -1rem">
+                                            <li>Aumento de personal seguridad ciudadana.
+                                            </li>
+                                            <li>Apoyo legal a víctimas de délitos y violencia intrafamiliar.
+                                            </li>
+                                            <li>Crear oficina de defensoría del vecino.</li>
+                                            <li>Abastecimiento constante de medicamentos esenciales
+                                            </li>
+                                            <li>Transporte gratuito para vecinos dentro de la comuna. </li>
+                                            <li>Día del Cachureo itinerante.</li>
+                                            <li>Catastro y mantenimiento del arbolado en Macul.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-content-center mt-3">
+                        <a href="https://www.instagram.com/eduardo_yayo_espinoza/" target="_blank">
+                            <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                        </a>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Gonzalo Montoya Riquelme" [selected]="false" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border mb-4">
+                        <span class="text-900 line-height-3"> Partido Independiente
+                            <span class="text-600 text-sm"> <br>Actualmente
+                                no forma parte de ningún partido. </span>
+                            <span class="text-600 text-sm font-bold"><br> No indica ideología</span>
+                        </span>
+                    </li>
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/alcalde/gonzalo.png" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Botones de info -->
+                    <div class="flex justify-content-center gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antgonza.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antgonza [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> Actual alcalde de Macul, electo el año 2016, reelecto el año 2021.</li>
+                                    <li> Ingeniero en informática e Ingeniero Civil Industrial. </li>
+                                    <li> Impulsó Macul, haciendo que esta comuna llegase al ranking top 10 comunas con
+                                        mejor calidad de vida. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propgonza.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propgonza [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem">
+                                    <li> <b>Propuestas importantes:</b>
+                                        <ul style="text-align: justify; margin-left: -1rem">
+                                            <li>Duplicar cámaras en parques y aumentar personal de seguridad.
+                                            </li>
+                                            <li>Implementar la unidad de drones de vigilancia preventiva.
+                                            </li>
+                                            <li>Implementar dos nuevas farmacias comunales.</li>
+                                            <li>Creación de óptica municipal.
+                                            </li>
+                                            <li>Creación de la casa de la mujer y casa de la juventud. </li>
+                                            <li>Construcción de biblioteca municipal.</li>
+                                            <li>Plantar dos mil árboles nativos.</li>
+                                            <li>Buses de acercamiento comunales. </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-content-center mt-3">
+                        <a href="https://www.instagram.com/gonzalomontoyaralcalde/" target="_blank">
+                            <i class="pi pi-instagram" style="font-size: 24px;"></i>
+                        </a>
+                    </div>
+                </p-accordionTab>
+
+            </p-accordion>
+        </div>
+
+        <!--<div class="col-12 md:col-6">
+
+        <div class="card">
+            <h5>TabView</h5>
+            <p-tabView orientation="left">
+                <p-tabPanel header="Header I" class="line-height-3 m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </p-tabPanel>
+                <p-tabPanel header="Header II" class="line-height-3 m-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque
+                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt.
+                    Consectetur, adipisci velit, sed quia non numquam eius modi.
+                </p-tabPanel>
+                <p-tabPanel header="Header III" class="line-height-3 m-0">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores
+                    et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit
+                    quo minus.
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <div class="card">
+            <h5>Panel</h5>
+            <p-panel header="Header" [toggleable]="true" class="line-height-3 m-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p-panel>
+        </div>
+
+        <div class="card">
+            <h5>Fieldset</h5>
+            <p-fieldset legend="Legend" [toggleable]="true" class="line-height-3 m-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p-fieldset>
+        </div>
+
+        <div class="card">
+            <div class="flex align-items-center justify-content-between mb-0">
+                <h5>Card</h5>
+                <p-menu #menu [popup]="true" [model]="cardMenu"></p-menu>
+                <button pButton type="button" icon="pi pi-plus" class="p-button-text"
+                    (click)="menu.toggle($event)"></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card">
+            <h5>Divider</h5>
+            <div class="grid">
+                <div class="col-5 flex align-items-center justify-content-center">
+                    <div class="p-fluid">
+                        <div class="field">
+                            <label for="username">Username</label>
+                            <input pInputText id="username" type="text" />
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input pInputText id="password" type="password" />
+                        </div>
+                        <p-button label="Login" class="mt-2"></p-button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p-divider layout="vertical">
+                        <b>OR</b>
+                    </p-divider>
+                </div>
+                <div class="col-5 align-items-center justify-content-center">
+                    <p class="line-height-3 m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+
+                    <p-divider layout="horizontal" align="center">
+                        <span class="p-tag">Badge</span>
+                    </p-divider>
+
+                    <p class="line-height-3 m-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
+                        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+
+                    <p-divider align="right">
+                        <p-button label="Button" icon="pi pi-search" styleClass="p-button-outlined"></p-button>
+                    </p-divider>
+
+                    <p class="line-height-3 m-0">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et
+                        voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur
+                        a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                        doloribus asperiores repellat.
+                        Donec vel volutpat ipsum. Integer nunc magna, posuere ut tincidunt eget, egestas vitae sapien.
+                        Morbi dapibus luctus odio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card">
+            <h5>Splitter</h5>
+            <p-splitter [style]="{'height': '300px'}" [panelSizes]="[30,70]">
+                <ng-template pTemplate>
+                    <div class="col flex align-items-center justify-content-center">
+                        Panel 1
+                    </div>
+                </ng-template>
+                <ng-template pTemplate>
+                    <p-splitter layout="vertical" [panelSizes]="[50,50]" [minSizes]="[10,10]">
+                        <ng-template pTemplate>
+                            <div class="col flex align-items-center justify-content-center">
+                                Panel 2
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate>
+                            <div class="col flex align-items-center justify-content-center">
+                                Panel 3
+                            </div>
+                        </ng-template>
+                    </p-splitter>
+                </ng-template>
+            </p-splitter>
+        </div>
+    </div>-->
+    </div>

@@ -1,0 +1,568 @@
+<div class="grid">
+    <!--<div class="col-12">
+        <div class="card">
+            <h5>Toolbar</h5>
+            <p-toolbar>
+                <div class="p-toolbar-group-left flex flex-wrap">
+                    <button pButton type="button" label="New" icon="pi pi-plus" class="mr-2"></button>
+                    <button pButton type="button" label="Open" icon="pi pi-folder-open" class="p-button-secondary mr-2"></button>
+
+                    <i class="pi pi-bars p-toolbar-separator"></i>
+
+                    <button pButton type="button" icon="pi pi-check" class="p-button-success mr-2"></button>
+                    <button pButton type="button" icon="pi pi-trash" class="p-button-warning mr-2"></button>
+                    <button pButton type="button" icon="pi pi-print" class="p-button-danger"></button>
+                </div>
+
+                <div class="p-toolbar-group-right">
+                    <p-splitButton label="Options" icon="pi pi-check" [model]="items"></p-splitButton>
+                </div>
+            </p-toolbar>
+        </div>
+    </div>-->
+
+    <div class="col-12">
+        <div class="card" style="background-color: #f7ebcb">
+            <h4>Gobernadores Regionales</h4>
+
+            <p-panel header="¿Qué hace un gobernador?" [toggleable]="true" [collapsed]="true" class="line-height-3 m-0"
+                style="text-align: justify;">
+                <ul style="margin-left: -2rem">
+                    <li>Coordinar y liderar la planificación y desarrollo regional de acuerdo con las políticas
+                        nacionales.
+                    </li>
+                    <li>Elaborar y proponer el presupuesto regional y administrar los fondos asignados.
+                    </li>
+                    <li>Supervisar la implementación de proyectos y programas públicos en la región.
+                    </li>
+                    <li>Promover el desarrollo económico y social de la región a través de iniciativas y alianzas.
+                    </li>
+                    <li>Coordinar con los municipios y otras autoridades locales para la gestión de políticas públicas.
+                    </li>
+                    <li>Presidir el Consejo Regional (CORE), impulsando iniciativas en beneficio de la región.
+                    </li>
+                </ul>
+            </p-panel>
+
+            <p-panel header="¿Por qué es importante elegir un gobernador regional?" [toggleable]="true"
+                [collapsed]="true" class="line-height-3 m-0" style="text-align: justify;">
+                Elegir bien a un gobernador regional en Chile es crucial porque este lidera el desarrollo estratégico de
+                la región, gestionando proyectos y asignación de recursos para áreas como infraestructura, salud y
+                educación. Un gobernador comprometido asegura una planificación equilibrada y promueve iniciativas que
+                impulsan el crecimiento económico y social en las distintas comunas. Además, representa a la región ante
+                el gobierno central, canalizando las necesidades locales y garantizando que los recursos se destinen a
+                proyectos que mejoren la calidad de vida de los habitantes.
+            </p-panel>
+        </div>
+        <div class="card" style="background-color: #f7ebcb;">
+            <h5>Candidatos:</h5>
+            <p-accordion>
+                <p-accordionTab header="Claudio Orrego Larraín" [selected]="false" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border mb-4">
+                        <span class="text-900 line-height-3"> Partido Independiente
+                            <span class="text-600 text-sm"> <br>Ex Partido Democrata Cristiano hasta 2022. Actualmente
+                                no forma parte de ningún partido. </span>
+                            <span class="text-600 text-sm font-bold"><br> Centro</span>
+                        </span>
+                    </li>
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/claudio_orrego.png" alt="Image"
+                            width="200" [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+                    <div class="flex justify-content-center">
+                        <iframe width="250" height="200"
+                            src="https://www.youtube.com/embed/CuhLoHPsLqQ?si=MQvppYIRJgDeqrUx"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Botones de info -->
+                    <div class="flex justify-content-center gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antclaudio.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antclaudio [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Abogado, U Católica. </li>
+                                    <li> Actual gobernador de la RM. </li>
+                                    <li> Alcalde de Peñalolén en 2004 y 2008. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propclaudio.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propclaudio [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> <b>Objetivo:</b> Recuperar la ciudad para las personas, priorizando la equidad
+                                        territorial, seguridad y sostenibilidad.</li>
+                                    <li> <b>Iniciativas:</b> Del gobierno en 2021- 2024 se hicieron 167 propuestas, de
+                                        las cuales 133 fueron cumplidas (80%). </li>
+                                    <li> <b>Inversión:</b> $723.9 mil millones en 2,959 iniciativas, enfocadas en
+                                        sectores vulnerables. </li>
+                                    <li> <b>Ejes:</b> Seguridad, salud, inclusión, adaptación al cambio climático,
+                                        innovación y participación ciudadana.</li>
+                                    <li> <b>Proyectos destacados:</b> Parque Metropolitano, Red Metropolitana de
+                                        Ciclovías, y programas de recuperación de espacios públicos. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Francisco Orrego -->
+                <p-accordionTab header="Francisco Orrego Gutierrez" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 mb-4 surface-border">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/rn.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3"> Chile Vamos Renovación Nacional - Independientes
+                            <span class="text-600 text-sm"> <br>Conservadurismo, Anticomunismo, Pinochetismo</span>
+                            <span class="text-600 text-sm font-bold"><br> Centroderecha a Derecha</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/orrego_francisco.jpg" alt="Image"
+                            width="200" [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+                    <div class="flex justify-content-center">
+                        <iframe width="250" height="200"
+                            src="https://www.youtube.com/embed/94qLAESExkg?si=2QIM_1E3thz2RUfC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antfrancisco.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antfrancisco [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Abogado, U de Chile.</li>
+                                    <li> Asesor de Vamos Chile en la Convención Constitucional y vicepresidente de RN.
+                                    </li>
+                                    <li> Ex vocero "Con mi plata no".</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propfrancisco.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propfrancisco [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li><b>Objetivo</b> Mejorar la calidad de vida de los habitantes hacia el 2050.</li>
+                                    <li> <b>Transporte y Conectividad:</b> Se propone mejorar la infraestructura de
+                                        transporte para facilitar la movilidad y conectar mejor a las comunas,
+                                        promoviendo un sistema de transporte más eficiente.</li>
+                                    <li> <b>Medio Ambiente y Comunas Rurales:</b> Se enfoca en la protección del medio
+                                        ambiente y el desarrollo sostenible de las comunas rurales, promoviendo
+                                        prácticas que beneficien tanto a la naturaleza como a las comunidades.</li>
+                                    <li> <b>Integración Social: </b> Se pretende fomentar la cohesión social y la
+                                        inclusión, creando espacios y programas que promuevan la convivencia y el apoyo
+                                        a grupos vulnerables.</li>
+                                    <li> <b>Calidad de Vida y Obras Públicas:</b> Se busca mejorar la infraestructura
+                                        urbana y los servicios públicos para elevar la calidad de vida de los
+                                        habitantes, asegurando acceso a servicios básicos. </li>
+                                    <li> <b>Empleo, Innovación y Desarrollo Urbano:</b> Se propone impulsar el empleo y
+                                        la innovación a través de proyectos de desarrollo urbano que generen
+                                        oportunidades económicas y mejoren la infraestructura. </li>
+                                    <li> <b>Patrimonio y Cultura:</b> Se pretende proteger y promover el patrimonio
+                                        cultural de la región, fomentando la identidad local y el acceso a actividades
+                                        culturales para todos los ciudadanos. </li>
+                                    <li> <b>Enfoque:</b> Alianzas público-privadas, eficiencia en el gobierno, y
+                                        protección del patrimonio cultural. </li>
+                                    <li><b>Llamado a la acción:</b> Necesidad urgente de cambios para un futuro
+                                        sostenible y seguro.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Macarena Santelices Cañas -->
+                <p-accordionTab header="Macarena Santelices Cañas" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border mb-4">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/republicano.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Partido Republicano de Chile
+                            <span class="text-600 text-sm"> <br>Pinochetismo, Ultraconservadurismo, Autoritarismo
+                            </span>
+                            <span class="text-600 text-sm font-bold"><br> Extrema Derecha</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/macarena.jpg" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+                    <div class="flex justify-content-center">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/wheIkHV6Ey8?si=7D4jKTMCFyw2IPbK"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antmaca.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antmaca [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Periodista, U. Viña del Mar. </li>
+                                    <li> Trabajó en la televisión desde el 2000.</li>
+                                    <li> Concejala de Olmué en 2008.</li>
+                                    <li> Alcaldesa de Olmué 2012.</li>
+                                    <li> Ministra de la Mujer 2020. </li>
+                                    <li> Sobrina nieta de Pinochet, Ex Militante UDI.</li>
+                                    <li> Renunció al cargo de ministra de la mujer luego de unas semanas por malas
+                                        gestiones y controversias. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propmaca.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propmaca [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> <b>Compromisos:</b> Enfrentar la delincuencia, mejorar la salud, y abordar el
+                                        déficit habitacional. </li>
+                                    <li> <b>Seguridad:</b> Implementación de unidades de seguridad regional. Estrategias
+                                        para combatir la delincuencia y el crimen organizado en base a IA. </li>
+                                    <li> <b>Participación Ciudadana:</b> Establecer canales de comunicación efectivos
+                                        entre ciudadanos y autoridades. </li>
+                                    <li> <b>Desarrollo Sostenible:</b> Fomentar la regeneración urbana y la conservación
+                                        de espacios verdes.</li>
+                                    <li> <b>Inclusión:</b> Garantizar el acceso equitativo a servicios y oportunidades.
+                                    </li>
+                                    <li> <b>Deporte:</b> Impulsar iniciativas deportivas para mejorar la calidad de
+                                        vida.</li>
+                                    <li> <b>Enfoque:</b> Priorizar las necesidades de las comunas más vulnerables y
+                                        fomentar el desarrollo equitativo.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Carlos Pichuante Verdugo -->
+                <p-accordionTab header="Carlos Pichuante Verdugo" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border mb-4">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/avp.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Partido Alianza Verde Popular
+                            <span class="text-600 text-sm"> <br> Animalismo, Ecologismo, Democracia Participativa</span>
+                            <span class="text-600 text-sm font-bold"><br> Izquierda</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/carlos.png" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+                    <div class="flex justify-content-center">
+                        <iframe width="250" height="315"
+                            src="https://alianzaverde.cl/wp-content/uploads/2024/02/Video.mp4?_=1"
+                            title="Alianza Verde Player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antcarlos.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antcarlos [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Profesor de Inglés.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propcarlos.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propcarlos [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> <b>Derechos Ambientales:</b> Defiende el medio ambiente como sujeto de derecho
+                                        para abordar los impactos del cambio climático.</li>
+                                    <li> <b>Rechazo a la Violencia:</b> Se opone a la violencia, promoviendo cambios
+                                        pacíficos y un desarrollo inclusivo.
+                                    </li>
+                                    <li> <b>Democracia Ecológica:</b> Impulsa la democracia ecológica y ambiental,
+                                        fomentando la participación comunitaria en la gestión de territorios. </li>
+                                    <li> <b>Enfoque Justo y Solidario:</b> Se basa en la voluntad mayoritaria y el
+                                        respeto por los derechos de la naturaleza, promoviendo un país más justo y
+                                        solidario.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Claudio Rojas Fischer -->
+                <p-accordionTab header="Claudio Rojas Fischer" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 surface-border">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/gente.jpg" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Partido de la Gente
+                            <span class="text-600 text-sm"> <br>Populismo, Conservadurismo Liberal,
+                                Antiinmigración</span>
+                            <span class="text-600 text-sm font-bold"><br> Centroderecha a Derecha</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/claudio.jpg" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+                    <div class="flex justify-content-center">
+                        <iframe width="250" height="200"
+                            src="https://www.youtube.com/embed/6AymGHxGrWA?si=iLRAO0UF9ywUwLzh"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antfischer.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antfischer [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Abogado, U de Chile.</li>
+                                    <li> Sin experiencia previa en política.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propfischer.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propfischer [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> <b>Seguridad:</b> Incluye el programa "Metropolitana Seguridad 360", que
+                                        propone la instalación de 20,000 cámaras de vigilancia en puntos estratégicos,
+                                        un Teléfono Único de Emergencias y una base de datos común para coordinar a las
+                                        fuerzas de seguridad. También se sugiere el uso de drones y una aplicación móvil
+                                        para mejorar la seguridad ciudadana.</li>
+                                    <li> <b>Fomento Económico Regional:</b> Propone apoyar el emprendimiento a través de
+                                        programas de capacitación, acceso a financiamiento, creación de redes y espacios
+                                        de trabajo. Se busca fortalecer la innovación y el desarrollo de nuevas empresas
+                                        en la región.</li>
+                                    <li> <b>Fiscalización de la Administración:</b> Se plantea una auditoría forense de
+                                        la gestión anterior para evaluar el uso de los fondos públicos, con el fin de
+                                        garantizar la transparencia y redirigir recursos hacia iniciativas más
+                                        efectivas.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Nathalie Joignant Pacheco -->
+                <p-accordionTab header="Nathalie Joignant Pacheco" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 mb-4 surface-border">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/verdesocial.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Federación Regionalista Verde Social
+                            <span class="text-600 text-sm"> <br>Regionalismo, Ecologismo, Progresismo</span>
+                            <span class="text-600 text-sm font-bold"><br> Centroizquierda a Izquierda</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/nathalie.jpg" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antnathalie.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antnathalie [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Licenciada en lengua y literatura inglesa, U. de Chile</li>
+                                    <li> Activista medioambiental.</li>
+                                    <li> Ex Seremi de Agricultura 2022 - 2024.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propnathalie.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propnathalie [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> <b>Regionalización:</b> Se propone una descentralización que aumente la equidad
+                                        en el acceso a servicios públicos, fomente la autonomía regional y territorial,
+                                        y promueva un desarrollo acorde a las capacidades locales. Se busca una
+                                        participación vinculante en la toma de decisiones, con un Estado descentralizado
+                                        y transparente.</li>
+                                    <li> <b>Desarrollo sustentable:</b> Se aboga por una gestión ambiental sostenible
+                                        que
+                                        conserve los recursos naturales y promueva la responsabilidad intergeneracional.
+                                        Se busca un equilibrio entre el uso de los recursos y la preservación de los
+                                        ecosistemas.
+                                    </li>
+                                    <li> <b>Territorio y pueblos originarios:</b> Se defiende la preservación de la
+                                        cultura y
+                                        derechos de las comunidades rurales y pueblos originarios. Se propone una
+                                        Política de Desarrollo Rural que mejore las condiciones de vida en igualdad con
+                                        la vida urbana y la creación de autonomías territoriales para las naciones
+                                        originarias. </li>
+                                    <li> <b>Derechos sociales y diversidad:</b> Se promueve la igualdad en la
+                                        diversidad, con políticas públicas que combatan las desigualdades económicas,
+                                        sociales y culturales. También se impulsa una agenda de igualdad para las
+                                        diversidades sexuales, basada en el reconocimiento de identidades, la garantía
+                                        de derechos y la creación de una nueva institucionalidad.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Catalina Valenzuela Maureira -->
+                <p-accordionTab header="Catalina Valenzuela Maureira" class="line-height-3 m-0">
+                    <li class="flex align-items-center py-2 mb-4 surface-border">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/humanista.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Partido Humanista de Chile
+                            <span class="text-600 text-sm"> <br>Ecología Social, Feminismo, Internacionalismo</span>
+                            <span class="text-600 text-sm font-bold"><br> Izquierda</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/cata.jpg" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+                    <div class="flex justify-content-center">
+                        <iframe width="250" height="200"
+                            src="https://www.youtube.com/embed/bvrYebfhHAg?si=d7Ba8JFjAaWk331f"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antcata.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antcata [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Sin información de estudios. </li>
+                                    <li> Activista Feminista.</li>
+                                    <li> Presidenta Partido Humanista de Chile 2019 - Act.</li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propcata.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propcata [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> <b>Objetivo:</b> Construir un bloque político independiente para transformar
+                                        Chile y
+                                        defender derechos del pueblo.</li>
+                                    <li> <b>Visión:</b> Promover la dignidad humana, la participación social y la
+                                        igualdad. </li>
+                                    <li> <b>Directrices:</b> Fomentar desarrollo social, cultural y productivo; mejorar
+                                        la seguridad; y garantizar derechos en salud, educación y vivienda. </li>
+                                    <li> <b>Participación Ciudadana:</b> Impulsar procesos democráticos y presupuestos
+                                        participativos en las comunas. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+                <!-- Rodrigo Logan Soto -->
+                <p-accordionTab header="Rodrigo Logan Soto" class="line-height-3 m-0">
+                    <li class="flex align-items-center mb-4 py-2">
+                        <div
+                            class="w-3rem h-3rem flex align-items-center justify-content-center bg-white-100 border-circle mr-3 flex-shrink-0">
+                            <p-avatar image="assets/demo/images/partidos/cristiano.png" shape="circle" size="large" />
+                        </div>
+                        <span class="text-900 line-height-3">Social Cristiano
+                            <span class="text-600 text-sm"> <br>Evangelicalismo, Ultraconservadurismo, Sionismo
+                                Cristiano</span>
+                            <span class="text-600 text-sm font-bold"><br> Extrema Derecha</span>
+                        </span>
+                    </li>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-content-center">
+                        <p-image src="assets/demo/images/candidatos/gobernador/rodrigo.jpg" alt="Image" width="200"
+                            [preview]="true"></p-image>
+                    </div>
+
+                    <!-- Video de Youtube -->
+
+                    <!-- Botones Info -->
+                    <div class="flex justify-content-center flex-wrap gap-2 mt-2">
+                        <div>
+                            <button type="button" pButton label="Antecedentes" (click)="antrorro.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #antrorro [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> Derecho, U. de Chile. </li>
+                                    <li> Gerente general Logan Abogados. </li>
+                                    <li> Ex candidato a Constituyente. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                        <div>
+                            <button type="button" pButton label="Propuestas" (click)="propprorro.toggle($event)"
+                                class="p-button-success"></button>
+                            <p-overlayPanel #propprorro [showCloseIcon]="true" [style]="{width: '380px'}">
+                                <ul style="text-align: justify; margin-left: -2rem;">
+                                    <li> No se encontró propuesta de gobierno 2025. </li>
+                                </ul>
+                            </p-overlayPanel>
+                        </div>
+                    </div>
+                </p-accordionTab>
+
+
+            </p-accordion>
+        </div>
+    </div>
